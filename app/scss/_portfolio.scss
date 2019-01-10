@@ -1,0 +1,36 @@
+.portfolio{
+  padding: 60px 0;
+  .portfolio__text{
+    h2{
+      @include style_headline;
+    }
+    img{
+      padding: 30px 0 40px;
+    }
+    p{
+      padding-bottom: 50px;
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 1.4px;
+    }
+    .portfolio__text_btn{
+      margin: 0;
+      width: 135px;
+      height: 40px;
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 13px;
+      font-weight: 700;
+      border: 2px solid $main-color;
+      background-repeat: no-repeat;
+      background-color: #fff;
+    }
+    &:hover .button{
+      color: #fff;
+      background-color: $main-color;
+    }
+  }
+  .portfolio__foto{}
+}
