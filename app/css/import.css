@@ -953,14 +953,23 @@ table {
 @media screen and (max-width: 575.98px) {
   .prices .prices__text p {
     max-width: 300px; }
-  .prices .prices__list .prices__list_box h5 {
-    padding: 20px 0; }
-  .prices .prices__list .prices__list_box .prices__list_box-pri {
-    padding: 10px 0 20px; }
-  .prices .prices__list .prices__list_box .pri-main {
-    line-height: 18px; }
-  .prices .prices__list .prices__list_box .prices__list_box-btn {
-    margin: 20px 0; } }
+  .prices .prices__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .prices .prices__list .prices__list_box {
+      margin: 10px 0;
+      width: 280px;
+      height: 450px; }
+      .prices .prices__list .prices__list_box h5 {
+        padding: 20px 0; }
+      .prices .prices__list .prices__list_box .prices__list_box-pri {
+        padding: 10px 0 20px; }
+      .prices .prices__list .prices__list_box .pri-main {
+        line-height: 18px; }
+      .prices .prices__list .prices__list_box .prices__list_box-btn {
+        margin: 20px 0; } }
 
 .looking {
   background-color: #2D2D2F;
@@ -1255,7 +1264,7 @@ footer {
     width: 280px;
     height: 50px; }
   footer .footer__bottom .footer_line::before {
-    min-width: 300px;
+    width: 300px;
     margin: 0; }
   footer .footer__bottom p {
     text-align: center;

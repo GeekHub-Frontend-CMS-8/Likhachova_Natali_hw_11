@@ -112,7 +112,14 @@
       }
     }
     .prices__list{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .prices__list_box{
+        margin: 10px 0;
+        width: 280px;
+        height: 450px;
         h5{
           padding: 20px 0;
         }
