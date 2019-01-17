@@ -1,7 +1,7 @@
 .top{
   background: url("../img/top/Image.png")no-repeat;
   background-size: cover;
-  height: 396px;
+  height: 698px;
   header{
     display: flex;
     text-align: center;
@@ -82,12 +82,30 @@
     }
   }
   .top__carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    margin-top: 200px;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
     h3{
       @include main_text;
       color: #fff;
       line-height: 50px;
     }
     h1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 240px;
+      width: 516px;
+      height: 109px;
+      background: url("../img/top/Line.png")no-repeat;
       @include style_headline;
       color: #fff;
       font-size: 36px;
@@ -95,7 +113,7 @@
       letter-spacing: 0.89px;
     }
     .top__carousel_btn{
-      margin: 0;
+      margin: 40px 0 0 0 ;
       width: 135px;
       height: 40px;
       color: #fff;
@@ -105,6 +123,22 @@
       border: 2px solid #fff;
       background-repeat: no-repeat;
       background-color: transparent;
+    }
+    img{
+      margin: -8px 0 0 490px;
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .top {
+    .top__carousel{
+      max-width: 800px;
+      h1{
+        margin-left: 140px;
+      }
+      img{
+        margin: -8px 0 0 395px;
+      }
     }
   }
 }
@@ -124,6 +158,15 @@
             line-height: 30px;
           }
         }
+      }
+    }
+    .top__carousel{
+      max-width: 600px;
+      h1{
+        margin-left: 40px;
+      }
+      img{
+        margin: -8px 0 0 295px;
       }
     }
   }
@@ -228,6 +271,26 @@
     .top__social{
       margin-bottom: 10px;
       margin-right: 45px;
+    }
+    .top__carousel{
+      max-width: 250px;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      h3{
+        @include main_text;
+        color: #fff;
+        line-height: 50px;
+      }
+      h1{
+        margin-left: 0;
+        width: 250px;
+        font-size: 20px;
+      }
+      img{
+        margin: -8px 0 0 115px;
+      }
     }
   }
 }

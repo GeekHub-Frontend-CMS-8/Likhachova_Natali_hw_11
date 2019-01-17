@@ -30,7 +30,8 @@
           @include main_text;
         }
         .about__box_top-btn{
-          .about-btn{
+          outline: #cc0000;
+          button{
             margin: 0;
             width: 135px;
             height: 40px;
@@ -41,6 +42,9 @@
             border: 2px solid $main-color;
             background-repeat: no-repeat;
             background-color: #fff;
+            .first_btn{
+              outline: #cc0000;
+            }
           }
           &:hover .first_btn{
             color: #fff;
