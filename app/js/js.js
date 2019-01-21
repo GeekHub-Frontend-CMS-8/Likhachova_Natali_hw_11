@@ -1,5 +1,5 @@
-$('.top__carousel').slick(
-    responsive [
+$('.top__carousel').slick({
+    responsive: [
         {
             breakpoint: 600,
             settings:{
@@ -7,7 +7,7 @@ $('.top__carousel').slick(
             }
         }
         ]
-);
+});
 
 $('.testimonials__carousel').slick({
     dots: true,
@@ -18,7 +18,8 @@ $('.testimonials__carousel').slick({
         {
             breakpoint: 600,
             settings:{
-                dots: false
+                dots: false,
+                autoplay: false,
             }
         }
     ]
