@@ -1675,8 +1675,7 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start; }
   .post .post__box {
-    max-width: 370px;
-    outline: 2px solid #cc0000; }
+    max-width: 370px; }
     .post .post__box img {
       zoom: 90%; }
     .post .post__box h2 {
